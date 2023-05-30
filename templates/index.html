@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+
+    <title>HeartCare</title>
+</head>
+
+<body>
+
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="auth">{{session.username}}</h2>
+            <h2 id="question">Question Text</h2>
+            <div class="text_field" id="ul_text">
+                <input type="number" id="answer_field" name="answer" value="" class="form-controller">
+            </div>
+            <input type="hidden" id="type" value="text">
+            <ul id="ul_radio">
+                <li id="radio_a">
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Answer</label>
+                </li>
+
+                <li id="radio_b">
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Answer</label>
+                </li>
+
+                <li id="radio_c">
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Answer</label>
+                </li>
+
+                <li id="radio_d">
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Answer</label>
+                </li>
+
+            </ul>
+        </div>
+        <div class="buttons">
+            <button id="previous">Previous</button>
+            <button id="submit">Submit</button>
+        </div>
+
+
+
+
+    </div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="{{url_for('static', filename ='script.js')}}"></script>
+
+</body>
+
+</html>

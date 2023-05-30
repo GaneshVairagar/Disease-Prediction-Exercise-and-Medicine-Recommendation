@@ -1,0 +1,186 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-color: #b8c6db;
+        background-image: url('../static/homePageImg.jpg');
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+    }
+    
+    .quiz-container {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+        width: 600px;
+        overflow: hidden;
+    }
+    
+    .quiz-header {
+        padding: 4rem;
+    }
+    
+    h2,
+    h3 {
+        padding: 1rem;
+        text-align: center;
+        margin: 0;
+    }
+    
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    ul li {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+    
+    ul li label {
+        cursor: pointer;
+    }
+    
+    button {
+        background-color: #f01313;
+        color: #fff;
+        border: none;
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        font-size: 1.1rem;
+        font-family: inherit;
+        padding: 1.3rem;
+        transition: background-color 0.25s, color 0.25s
+    }
+    
+    .buttons {
+        display: flex;
+    }
+    
+    #previous {
+        background-color: rgb(87, 87, 87);
+        width: 50%;
+    }
+    
+    #submit {
+        width: 50%
+    }
+    
+    #previous:hover {
+        background-color: rgb(87, 87, 87);
+    }
+    
+    #previous:active {
+        background-color: black;
+    }
+    
+    #answer_field {
+        font-family: inherit;
+        width: 100%;
+        padding: 1.3rem;
+        margin: 8px 0;
+        box-sizing: border-box;
+    }
+    
+    button:hover {
+        background-color: #a91e1e;
+    }
+    
+    button:active {
+        opacity: 0.7;
+        background-color: #a91e1e;
+    }
+    
+    *,
+    *:before,
+    *:after {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background-image: url('../static/homePageImg.jpg');
+        background-size: cover;
+    }
+    /* https://source.unsplash.com/4le7k9XVYjE/1600x900 */
+    
+    form {
+        height: 520px;
+        width: 400px;
+        background-color: rgba(255, 255, 255, 0.03);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        backdrop-filter: blur(15px);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+        padding: 50px 35px;
+    }
+    
+    form * {
+        font-family: "Poppins", sans-serif;
+        color: #ffffff;
+        letter-spacing: 0.5px;
+        outline: none;
+        border: none;
+    }
+    
+    form h3 {
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 42px;
+        text-align: center;
+    }
+    
+     ::placeholder {
+        color: #e1e1e1;
+    }
+    
+    input:hover {
+        outline: 2px solid #0001;
+    }
+    
+    .social {
+        margin-top: 30px;
+        display: flex;
+    }
+    
+    .social div {
+        background: red;
+        width: 150px;
+        border-radius: 3px;
+        padding: 5px 10px 10px 5px;
+        background-color: rgba(255, 255, 255, 0.27);
+        color: #eaf0fb;
+        text-align: center;
+    }
+    
+    .social div:hover {
+        background-color: rgba(255, 255, 255, 0.47);
+    }
+    
+    .social .fb {
+        margin-left: 25px;
+    }
+    
+    .social i {
+        margin: 10px 0 4px;
+    }
+    
+    @media only screen and (max-width: 600px) {
+        body {
+            background-image: url('../static/homePageImg.jpg');
+            background-size: cover
+        }
+    }

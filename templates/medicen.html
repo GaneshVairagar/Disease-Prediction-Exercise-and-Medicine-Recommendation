@@ -1,0 +1,10 @@
+{% extends "layout.html"%} {% block body %}
+<div class="jumbotron text-center">
+    <h1>Welcome to HeartApp</h1>
+    <p class="lead">Heart Disease Prediction</p>
+    {% if session.logged_in %}
+    <a href="/dashboard" class="btn btn-primary btn-lg">Dashboard</a> {% else %}
+    <a href="/register" class="btn btn-primary btn-lg">Register</a>
+    <a href="/login" class="btn btn-success btn-lg">Login</a> {% endif %}
+</div>
+{% endblock %}
